@@ -27,7 +27,7 @@
 
   ![image-20230418190538377](README.assets/image-20230418190538377.png)
 
-1. 安装本程序
+2. 安装本程序
 
    2.1 找个地方新建文件夹amz_ratings_crawler
 
