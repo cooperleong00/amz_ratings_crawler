@@ -4,7 +4,7 @@ import time
 import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.chrome.options import Options
 
 
 def extract_product_data(file_path):
@@ -77,8 +77,11 @@ def save_result(results):
 if __name__ == '__main__':
 
     ratings = ['all_stars', 'five_star', 'four_star', 'three_star', 'two_star', 'one_star']
-    product_data = extract_product_data('asins.txt')
+    product_data = extract_product_data('asins.txt')    
 
+
+    options = Options()
+    options.add_argument("lang=zh-CN")
     browser = webdriver.Chrome()
 
     results = []
@@ -88,7 +91,7 @@ if __name__ == '__main__':
 
             browser.get(url)
 
-            time.sleep(1)
+            time.sleep(0.2)
             total_reviews, with_comment_reviews, rating = extract_info(browser)
             print(f"Rating: {rating}, Total Reviews: {total_reviews}, With Comment Reviews: {with_comment_reviews}")
             results.append((product, asin, total_reviews, with_comment_reviews, rating))
