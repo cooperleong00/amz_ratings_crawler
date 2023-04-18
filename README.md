@@ -38,13 +38,13 @@
 > 5. 将刚才的路径复制都最后（注意：要用;来连接两个路径）
 > 6. 然后点击确定（注意：每个确定都要点）
 >
-> ![图源来自https://blog.csdn.net/qq_22200671/article/details/108638836](README.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIyMjAwNjcx,size_16,color_FFFFFF,t_70#pic_center.png)
+> ![图源来自https://blog.csdn.net/qq_22200671/article/details/108638836](README.assets/env_path.png)
 
 2. 安装本程序
 
    2.1 找个地方新建文件夹amz_ratings_crawler
 
-   2.2 下载 [amz_ratings_crawler.exe](https://github.com/prismleong/amz_ratings_crawler/releases/download/latest/amz_ratings_crawler.exe) 到该文件夹中
+   2.2 下载 [amz_ratings_crawler.exe](https://github.com/prismleong/amz_ratings_crawler/releases/download/v0.2/amz_ratings_crawler.exe) 到该文件夹中
 
 
 
