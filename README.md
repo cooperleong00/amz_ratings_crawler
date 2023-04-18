@@ -5,6 +5,7 @@
 ## 环境准备&安装
 
 1. 安装selenium浏览器驱动（以Chrome浏览器为例）：
+  
   1.1 查看Chrome浏览器版本
 
   设置（右上角三个点） -> 关于Chrome -> 版本 xxx.yyy，记住这个一开始的xxx
