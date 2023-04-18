@@ -44,7 +44,7 @@
 
    2.1 找个地方新建文件夹amz_ratings_crawler
 
-   2.2 下载 [amz_ratings_crawler.exe](https://github.com/prismleong/amz_ratings_crawler/releases/download/v0.1/amz_ratings_crawler.exe) 到该文件夹中
+   2.2 下载 [amz_ratings_crawler.exe](https://github.com/prismleong/amz_ratings_crawler/releases/download/latest/amz_ratings_crawler.exe) 到该文件夹中
 
 
 
