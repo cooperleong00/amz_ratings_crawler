@@ -8,7 +8,7 @@
   
   1.1 查看Chrome浏览器版本
 
-  设置（右上角三个点） -> 关于Chrome -> 版本 xxx.yyy，记住这个一开始的xxx
+  设置（右上角三个点） -> 关于Chrome -> 版本 xxx.yyy，记住这个一开始的xxx。图中的xxx是112
 
   ![image-20230418190110241](README.assets/image-20230418190110241.png)
 
@@ -17,9 +17,7 @@
   打开https://chromedriver.storage.googleapis.com/index.html
 
   找到xxx对应的文件夹（有多个一样的选个最新的）
-  注意不是直接下红框里的文件夹里的文件！！而是找到你的Chrome对应版本号的文件夹！！
-
-  ![image-20230418190337689](README.assets/image-20230418190337689.png)
+  例如在上一步中的xxx是112，因此我们找到112.0.5615.28，112.0.5615.49这两个文件夹。选择相对新的一个即112.0.5615.49点击进入。
 
   windows系统下载chromedriver_win32.zip
 
@@ -29,7 +27,7 @@
 
   ![image-20230418190538377](README.assets/image-20230418190538377.png)
 
-2. 安装本程序
+1. 安装本程序
 
    2.1 找个地方新建文件夹amz_ratings_crawler
 
