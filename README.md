@@ -5,7 +5,7 @@
 ## 环境准备&安装
 
 1. 安装selenium浏览器驱动（以Chrome浏览器为例）：
-  
+
   1.1 查看Chrome浏览器版本
 
   设置（右上角三个点） -> 关于Chrome -> 版本 xxx.yyy，记住这个一开始的xxx。图中的xxx是112
@@ -27,7 +27,20 @@
 
   ![image-20230418190538377](README.assets/image-20230418190538377.png)
 
-1. 安装本程序
+​	1.3 将chromedriver.exe所在目录加入环境变量中
+
+​			如上步骤展示的例子则为 C:\Program Files\Google\Chrome\Application
+
+> 1. 右键点击‘我的电脑’，选择属性
+> 2. 点击高级系统设置
+> 3. 点击环境变量
+> 4. 在系统变量中找到Path并双击
+> 5. 将刚才的路径复制都最后（注意：要用;来连接两个路径）
+> 6. 然后点击确定（注意：每个确定都要点）
+>
+> ![图源来自https://blog.csdn.net/qq_22200671/article/details/108638836](README.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIyMjAwNjcx,size_16,color_FFFFFF,t_70#pic_center.png)
+
+2. 安装本程序
 
    2.1 找个地方新建文件夹amz_ratings_crawler
 
