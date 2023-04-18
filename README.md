@@ -17,6 +17,7 @@
   打开https://chromedriver.storage.googleapis.com/index.html
 
   找到xxx对应的文件夹（有多个一样的选个最新的）
+  注意不是直接下红框里的文件夹里的文件！！而是找到你的Chrome对应版本号的文件夹！！
 
   ![image-20230418190337689](README.assets/image-20230418190337689.png)
 
