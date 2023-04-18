@@ -9,7 +9,7 @@
 
   设置（右上角三个点） -> 关于Chrome -> 版本 xxx.yyy，记住这个一开始的xxx
 
-  ![image-20230418190110241](H:\_Latest\Projects\amz_ratings_crawler\README.assets\image-20230418190110241.png)
+  ![image-20230418190110241](README.assets\image-20230418190110241.png)
 
   1.2 下载并安装驱动
 
@@ -17,21 +17,21 @@
 
   找到xxx对应的文件夹（有多个一样的选个最新的）
 
-  ![image-20230418190337689](H:\_Latest\Projects\amz_ratings_crawler\README.assets\image-20230418190337689.png)
+  ![image-20230418190337689](README.assets\image-20230418190337689.png)
 
   windows系统下载chromedriver_win32.zip
 
-  ![image-20230418190421003](H:\_Latest\Projects\amz_ratings_crawler\README.assets\image-20230418190421003.png)
+  ![image-20230418190421003](README.assets\image-20230418190421003.png)
 
   解压压缩包中的chromedriver.exe 到Chrome浏览器所在目录（通常默认为C:\Program Files\Google\Chrome\Application）（不用运行）
 
-  ![image-20230418190538377](H:\_Latest\Projects\amz_ratings_crawler\README.assets\image-20230418190538377.png)
+  ![image-20230418190538377](README.assets\image-20230418190538377.png)
 
-2. 安装本程序
+1. 安装本程序
 
    2.1 找个地方新建文件夹amz_ratings_crawler
 
-   2.2 下载 到该文件夹中
+   2.2 下载 [amz_ratings_crawler.exe](https://github.com/prismleong/amz_ratings_crawler/releases/download/v0.1/amz_ratings_crawler.exe) 到该文件夹中
 
 
 
