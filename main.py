@@ -26,7 +26,11 @@ def extract_info(driver):
     # 提取评分信息
     try:
         rating_element = driver.find_element(By.XPATH, '//span[@data-hook="rating-out-of-text"]')
-        rating = float(rating_element.text.replace("星，共", "").split(" ")[0])
+        rating = rating_element.text
+        if "星，共" in rating:
+            rating = float(rating_element.text.replace("星，共", " ").split(" ")[0])
+        else:
+            rating = float(rating_element.text.replace("/", " ").split(" ")[0])
     except Exception as e:
         rating = None
         print(f"Error extracting rating: {e}")
@@ -34,15 +38,23 @@ def extract_info(driver):
     # 提取总评分和带评论数量
     try:
         review_summary_element = driver.find_element(By.XPATH, '//div[@data-hook="cr-filter-info-review-rating-count"]')
-        review_summary = review_summary_element.text.split(", ")
-        total_reviews = int(review_summary[0].split(" ")[0].replace(',', ''))
-        with_comment_reviews = int(review_summary[1].split(" ")[0].replace(',', ''))
+        review_summary = review_summary_element.text.strip()
+        if "件の合計評価" in review_summary:
+            review_summary = review_summary.split("件の合計評価、レビュー付き:")
+            total_reviews = int(review_summary[0].replace(',', ''))
+            with_comment_reviews = int(review_summary[1].replace(',', ''))
+        else:
+            review_summary = review_summary.split(", ")
+            total_reviews = int(review_summary[0].split(" ")[0].replace(',', ''))
+            with_comment_reviews = int(review_summary[1].split(" ")[0].replace(',', ''))
     except Exception as e:
         total_reviews = None
         with_comment_reviews = None
         print(f"Error extracting review summary: {e}")
 
     return total_reviews, with_comment_reviews, rating
+
+
 
 
 def save_result(results):
@@ -81,7 +93,7 @@ if __name__ == '__main__':
 
 
     options = Options()
-    options.add_argument("lang=zh-CN")
+    options.add_argument("lang=ja")
     browser = webdriver.Chrome()
 
     results = []
